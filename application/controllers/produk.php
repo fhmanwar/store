@@ -10,7 +10,7 @@ class produk extends CI_Controller {
 		$this->load->model('home_model');
 		$this->load->model('produk_model');
 		$this->load->model('kategori_produk_model');
-		$this->load->library('cart');
+		// $this->load->library('cart');
 	}
 
 	// Index
