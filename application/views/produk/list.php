@@ -69,26 +69,26 @@
 					<div class="side">
 						<h2>Categories</h2>
 						<div class="fancy-collapse-panel">
-								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-									 <div class="panel panel-default">
-											 <div class="panel-heading" role="tab" id="headingOne">
-													 <h4 class="panel-title">
-															 <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Coffee
-															 </a>
-													 </h4>
-											 </div>
-											 <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-													 <div class="panel-body">
-															 <ul>
-																 <li><a href="<?php echo base_url('produk/index')?>">All</a></li>
-																 <?php	foreach ($kategori as $row) { ?>
-																<li><a href="<?php echo base_url('produk/index/'.$row->id_kategori)?>"><?php echo $row->nama_kategori ?></a></li>
-																<?php } ?>
-															 </ul>
-													 </div>
-											 </div>
-									 </div>
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Coffee
+											</a>
+										</h4>
+									</div>
+									<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<ul>
+												<li><a href="<?php echo base_url('produk/index')?>">All</a></li>
+												<?php	foreach ($kategori as $row) { ?>
+											<li><a href="<?php echo base_url('produk/index/'.$row->id_kategori)?>"><?php echo $row->nama_kategori ?></a></li>
+											<?php } ?>
+											</ul>
+										</div>
+									</div>
 								</div>
+							</div>
 						 </div>
 					</div>
 
